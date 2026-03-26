@@ -1,0 +1,18 @@
+The table  at the bottom 
+of this page summarizes the performance characteristics of the algorithms that we have 
+considered in propositions and properties in this chapter (with the exception of the 
+worst-case results for hashing, which are from the research literature and unlikely to 
+be experienced in practice). It is clear from the table that, for typical applications, your 
+decision comes down to a choice between hash tables and binary search trees.
+The advantages of hashing over BST implementations are that the code is simpler 
+and search times are optimal (constant), if the keys are of a standard type or are suf
+ficiently simple that we can be confident of developing an efficient hash function for 
+them that (approximately) satisfies the uniform hashing assumption. The advantages 
+of BSTs over hashing are that they are based on a simpler abstract interface (no hash 
+function need be designed); red-black BSTs can provide guaranteed worst-case perfor
+mance; and they support a wider range of operations (such as rank, select, sort, and 
+range search).  As a rule of thumb, most programmers will use hashing except when 
+one or more of these factors is important, when red-black BSTs are called for. In Chap
+ter 5, we will study one exception to this rule of thumb: when keys are long strings, 
+we can build data structures that are even more flexible than red-black BSTs and even 
+faster than hashing.
